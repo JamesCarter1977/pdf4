@@ -1,0 +1,35 @@
+{
+  "name": "app-talk",
+  "description": "AppTalk - Let iOS apps talk. A user contributable directory of iOS apps with x-callback-urls.",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy": "rm -rf node_modules/gh-pages/.cache && gatsby build --prefix-paths && gh-pages -d public",
+    "lintsrc": "./node_modules/.bin/eslint src/**/*.js",
+    "lintjson": "./node_modules/.bin/jsonlint-cli data/apps/*.json"
+  },
+  "dependencies": {
+    "clipboard": "2.0.1",
+    "gatsby": "1.9.241",
+    "gatsby-image": "1.0.51",
+    "gatsby-link": "1.6.39",
+    "gatsby-plugin-react-css-modules": "^1.0.15",
+    "gatsby-plugin-react-helmet": "2.0.11",
+    "gatsby-plugin-sharp": "1.6.44",
+    "gatsby-plugin-typography": "1.7.18",
+    "gatsby-source-filesystem": "1.5.29",
+    "gatsby-transformer-json": "1.0.16",
+    "gatsby-transformer-sharp": "1.6.24",
+    "react-helmet": "5.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.3",
+    "eslint": "4.19.1",
+    "eslint-plugin-react": "^7.7.0",
+    "gh-pages": "1.1.0",
+    "jsonlint": "1.6.3",
+    "jsonlint-cli": "1.0.1"
+  }
+}

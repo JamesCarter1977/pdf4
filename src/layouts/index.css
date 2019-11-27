@@ -1,0 +1,74 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #4a4a4a;
+}
+
+a:hover,
+a:focus {
+  color: #222
+}
+
+.g-module {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.g-headline-seperator {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.g-type-h4 {
+  font-family: 'Rubik';
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.g-type-thin {
+  font-family: 'Rubik';
+  font-weight: 300;
+}
+
+.g-monospace {
+  font-family: 'Fira Mono';
+  font-size: 1.875rem;
+  color: #8b8b8b;
+}
+
+.g-text-dark {
+  color: #222;
+}
+
+.g-text-light {
+  color: #777;
+}
+
+.gatsby-image-outer-wrapper {
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .g-monospace {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .g-monospace {
+    font-size: 1.25rem;
+  }
+
+  .g-module {
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .g-module {
+    padding: 0 12px;
+  }
+}

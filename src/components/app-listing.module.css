@@ -1,0 +1,78 @@
+.titleContainer {
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 12px 0;
+  margin-bottom: 36px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.titleInner {
+  display: flex;
+  align-items: center;
+}
+
+.titleMain {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.titleLink {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.titleLink:hover,
+.titleLink:focus {
+  color: #fff;
+}
+
+.title {
+  margin-left: 12px;
+  color: #fff;
+}
+
+.toApps {
+  text-decoration: none;
+  margin-left: -12px;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  text-indent: -999em;
+  background: transparent url(../images/apps.svg) no-repeat 0 0;
+}
+
+.appActionWrapper {
+  padding-bottom: 48px;
+}
+
+.appActionWrapper:not(:last-child) {
+  margin-bottom: 42px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (max-width: 650px) {
+  .toApps {
+    margin-left: -8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.25rem;
+    margin-left: 6px;
+  }
+
+  .titleSide {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .toApps {
+    margin-left: -4px;
+    margin-right: 6px;
+  }
+}

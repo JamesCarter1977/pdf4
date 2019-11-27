@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+.description {
+  flex-basis: 50%;
+  margin-top: 12px;
+}
+
+.nameRequired {
+  font-size: 68%;
+  vertical-align: super;
+}
+
+.nameDot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.nameLine {
+  height: 1px;
+  flex: 1;
+  margin: 0 6px;
+}
+
+.options {
+  list-style-type: circle;
+  margin-left: 2rem;
+}
+
+@media (max-width: 800px) {
+  .nameDot {
+    width: 26px;
+    height: 26px;
+  }
+
+  .description {
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 650px) {
+  .nameDot {
+    width: 22px;
+    height: 22px;
+  }
+
+  .description {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: block;
+  }
+
+  .nameLine {
+    display: none;
+  }
+
+  .description {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+  }
+}
